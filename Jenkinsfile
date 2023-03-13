@@ -6,22 +6,27 @@ node
     }
     stage('Build') 
     {
+      git branch: 'main', url: 'https://github.com/bhaarn/DevOpsDemo.git'
       echo "success"
     }
     stage('Unit Test')
     {
-        echo "success"
+      git branch: 'main', url: 'https://github.com/bhaarn/DevOpsDemo.git'     
+      echo "success"
     }
     stage('SonarQube Scan') 
     {
-        echo "success"
+      git branch: 'main', url: 'https://github.com/bhaarn/DevOpsDemo.git'  
+      echo "success"
     }
     stage('Lint Checks')
     {
-        echo "success"
+      git branch: 'main', url: 'https://github.com/bhaarn/DevOpsDemo.git'  
+      echo "success"
     }
     stage('Results') 
     {  
+      git branch: 'main', url: 'https://github.com/bhaarn/DevOpsDemo.git'
       echo "success"
     }
 }
